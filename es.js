@@ -4,8 +4,8 @@ function gridBoard(usersize) {
   let board = document.querySelector(".board");
   let squares = board.querySelectorAll("div");
   squares.forEach((div) => div.remove());
- // board.style.gridTemplateColumns = `repeat(${usersize} , 1fr)`;
-  //board.style.gridTemplateRows = `repeat(${usersize}, 1fr)`;
+  board.style.gridTemplateColumns = `repeat(${usersize} , 1fr)`;
+  board.style.gridTemplateRows = `repeat(${usersize}, 1fr)`;
 
   let squarenumbers = usersize * usersize;
   for (let i = 0; i < squarenumbers; i++) {
